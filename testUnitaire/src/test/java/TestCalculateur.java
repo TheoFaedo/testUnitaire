@@ -4,8 +4,13 @@ import org.junit.jupiter.api.Test;
 
 public class TestCalculateur {
 
-    @DisplayName("Test méthode additionner")
+
+
+
     @Test
+    @DisplayName("Test méthode additionner")
+    @ParameterizedTest
+    @ValueSource
     void testAdditionner(){
         Assertions.assertEquals(2, Calculateur.additionner(1,1));
     }
