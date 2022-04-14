@@ -1,15 +1,21 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 class CalculateurTest {
-
     @Test
     @DisplayName("Test de la methode additionner")
     void additionner() {
         Assertions.assertEquals(2, Calculateur.additionner(1,1));
+    }
+
+    @ParameterizedTest
+    @DisplayName("Test parametre de la methode additionner")
+    @ValueSource(ints = {1 , 2, 3 ,4 ,10 ,20, 100})
+    void additionnerParametrer(int nb) {
+        Assertions.assertEquals(2 + nb, Calculateur.additionner(nb,2));
     }
 
     @Test
