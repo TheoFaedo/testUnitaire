@@ -2,34 +2,31 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class TestCalculateur {
+import static org.junit.jupiter.api.Assertions.*;
 
-
-
+class CalculateurTest {
 
     @Test
-    @DisplayName("Test méthode additionner")
-    @ParameterizedTest
-    @ValueSource
-    void testAdditionner(){
+    @DisplayName("Test de la methode additionner")
+    void additionner() {
         Assertions.assertEquals(2, Calculateur.additionner(1,1));
     }
 
-    @DisplayName("Test méthode soustraire")
     @Test
-    void testSoustraire(){
+    @DisplayName("Test de la methode soustraire")
+    void soustraire() {
         Assertions.assertEquals(2, Calculateur.soustraire(3,1));
     }
 
-    @DisplayName("Test méthode multiplier")
     @Test
-    void testMultiplier(){
+    @DisplayName("Test de la methode multiplier")
+    void multiplier() {
         Assertions.assertEquals(2, Calculateur.multiplier(1,2));
     }
 
-    @DisplayName("Test méthode diviser")
     @Test
-    void testDiviser(){
+    @DisplayName("Test de la methode diviser")
+    void diviser() {
         Assertions.assertEquals(2, Calculateur.diviser(4,2));
     }
 }
