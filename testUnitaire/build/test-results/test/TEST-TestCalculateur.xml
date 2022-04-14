@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestCalculateur" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-04-14T11:53:55" hostname="DESKTOP-CJQRTO0" time="0.016">
+<testsuite name="TestCalculateur" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-04-14T11:56:37" hostname="DESKTOP-CJQRTO0" time="0.013">
   <properties/>
-  <testcase name="testSoustraire()" classname="TestCalculateur" time="0.014"/>
-  <testcase name="testAdditionner()" classname="TestCalculateur" time="0.001"/>
-  <testcase name="testMultiplier()" classname="TestCalculateur" time="0.0"/>
-  <testcase name="testDiviser()" classname="TestCalculateur" time="0.0"/>
+  <testcase name="Test mÃ©thode soustraire" classname="TestCalculateur" time="0.011"/>
+  <testcase name="Test mÃ©thode additionner" classname="TestCalculateur" time="0.001"/>
+  <testcase name="Test mÃ©thode multiplier" classname="TestCalculateur" time="0.0"/>
+  <testcase name="Test mÃ©thode diviser" classname="TestCalculateur" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
